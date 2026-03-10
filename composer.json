@@ -1,0 +1,45 @@
+{
+    "name": "psc-acme/extension-auth",
+    "description": "Package extension-auth for psc-acme organization",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Philipp Scheit",
+            "email": "p.scheit@packagist.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PscAcme\\ExtensionAuth\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.2",
+        "symfony/console": "^7.0",
+        "symfony/process": "^7.0",
+        "league/flysystem": "^3.0",
+        "symfony/dotenv": "^7.0",
+        "symfony/mailer": "^7.0",
+        "spatie/laravel-permission": "^6.0",
+        "psc-acme/sdk-auth": "^1.0",
+        "psc-acme/bundle-auth": "^1.0",
+        "psc-acme/toolkit-auth": "^1.0"
+    },
+    "require-dev": {
+        "symfony/phpunit-bridge": "^7.0",
+        "mockery/mockery": "^1.6",
+        "phpstan/phpstan": "^1.0"
+    },
+    "minimum-stability": "dev",
+    "config": {
+        "secure-http": false
+    },
+    "repositories": {
+        "private-packagist": {
+            "type": "composer",
+            "url": "http://repo.packagist.com.lo/psc-acme/"
+        },
+        "packagist.org": false
+    }
+}
